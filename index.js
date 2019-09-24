@@ -13,6 +13,8 @@ const backend = {
   	"node/exports-style": ["error", "module.exports"],
     "node/no-extraneous-import": "error",
     "node/no-unpublished-require": 0,
+    "no-useless-catch": 0,
+    "require-atomic-updates": 0,
   }
 };
 
