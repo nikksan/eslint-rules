@@ -19,7 +19,7 @@ const backend = {
 };
 
 const frontend = {
-  "parser": "babel-eslint",
+  "parser": "@typescript-eslint/parser",
   "extends": [
     "airbnb",
     "eslint:recommended"
@@ -44,6 +44,12 @@ const frontend = {
   "globals": {
     "zE": false
   },
+  "overrides": [
+    {
+      "files": ['*.ts', '.*.tsx'],
+      "extends": ['plugin:@typescript-eslint/recommended']
+    }
+  ],
   "rules": {
     ...baseRules,
     "import/imports-first": 0,
