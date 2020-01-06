@@ -1,6 +1,7 @@
 const baseRules = require('./rules');
 
 const backend = {
+  "parser": "@typescript-eslint/parser",
   "env": {
     "node": true,
     "es6": true,
@@ -15,7 +16,19 @@ const backend = {
     "node/no-unpublished-require": 0,
     "no-useless-catch": 0,
     "require-atomic-updates": 0,
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "extends": ["plugin:@typescript-eslint/recommended"],
+      "rules": {
+        "node/no-missing-import": 0,
+        "node/no-unsupported-features/es-syntax": 0,
+        "node/no-missing-require": 0,
+        "node/no-unpublished-import": 0,
+      }
+    }
+  ],
 };
 
 const frontend = {
