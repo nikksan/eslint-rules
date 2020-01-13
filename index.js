@@ -59,7 +59,7 @@ const frontend = {
   },
   "overrides": [
     {
-      "files": ['*.ts', '.*.tsx'],
+      "files": ['*.ts', '*.tsx'],
       "extends": ['plugin:@typescript-eslint/recommended']
     }
   ],

@@ -1,6 +1,6 @@
 {
   "name": "@luckbox/eslint-rules",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "Unified eslint rules between projects",
   "main": "index.js",
   "scripts": {
