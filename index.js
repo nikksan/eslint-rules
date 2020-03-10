@@ -86,6 +86,7 @@ const frontend = {
       2,
       "ignorePackages",
       {
+        "js": "never",
         "ts": "never",
         "tsx": "never"
       }
