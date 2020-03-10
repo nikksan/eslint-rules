@@ -82,7 +82,29 @@ const frontend = {
     ],
     "import/no-webpack-loader-syntax": 0,
     "import/prefer-default-export": 0,
-
+    "import/extensions": [
+      2,
+      "ignorePackages",
+      {
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "no-restricted-imports": [
+      2, {
+      "paths": [
+        {
+          "name": "react-router-dom",
+          "importNames": ["Link"],
+          "message": "Link is restricted. Please use LocalizedLink from views/i18n/LocalizedLink"
+        },
+        {
+          "name": "connected-react-router/immutable",
+          "importNames": ["push"],
+          "message": "push is restricted. Please use localizedPush from views/i18n/utils/localizedPush"
+        }
+      ]
+    }],
     "jsx-a11y/anchor-is-valid": 2,
     "jsx-a11y/aria-props": 2,
     "jsx-a11y/click-events-have-key-events": 0,
