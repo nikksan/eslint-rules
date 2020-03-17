@@ -60,7 +60,11 @@ const frontend = {
   "overrides": [
     {
       "files": ['*.ts', '*.tsx'],
-      "extends": ['plugin:@typescript-eslint/recommended']
+      "extends": ['plugin:@typescript-eslint/recommended'],
+      "rules": {
+        "@typescript-eslint/explicit-module-boundary-types": ["error"],
+        "@typescript-eslint/explicit-function-return-type": "off",
+      }
     }
   ],
   "rules": {
@@ -127,8 +131,9 @@ const frontend = {
 
     "react/button-has-type": [ 2, { "button": true, "submit": true, "reset": true } ],
     "react/default-props-match-prop-types": [ 2, { "allowRequiredDefaults": true } ],
-    "react/destructuring-assignment": [ 1, "always" ],
+    "react/destructuring-assignment": 0,
     "react/forbid-prop-types": 0,
+    "react/prop-types": 0,
     "react/require-default-props": 0,
     "react/require-extension": 0,
     "react/self-closing-comp": 0,
