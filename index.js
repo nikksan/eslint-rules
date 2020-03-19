@@ -26,6 +26,7 @@ const backend = {
         "node/no-unsupported-features/es-syntax": 0,
         "node/no-missing-require": 0,
         "node/no-unpublished-import": 0,
+        "no-undef": 0,
       }
     }
   ],
