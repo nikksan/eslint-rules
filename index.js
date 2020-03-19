@@ -1,6 +1,7 @@
 const baseRules = require('./rules');
 
 const backend = {
+  "parser": "@typescript-eslint/parser",
   "env": {
     "node": true,
     "es6": true,
@@ -15,7 +16,19 @@ const backend = {
     "node/no-unpublished-require": 0,
     "no-useless-catch": 0,
     "require-atomic-updates": 0,
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "extends": ["plugin:@typescript-eslint/recommended"],
+      "rules": {
+        "node/no-missing-import": 0,
+        "node/no-unsupported-features/es-syntax": 0,
+        "node/no-missing-require": 0,
+        "node/no-unpublished-import": 0,
+      }
+    }
+  ],
 };
 
 const frontend = {
@@ -46,8 +59,12 @@ const frontend = {
   },
   "overrides": [
     {
-      "files": ['*.ts', '.*.tsx'],
-      "extends": ['plugin:@typescript-eslint/recommended']
+      "files": ['*.ts', '*.tsx'],
+      "extends": ['plugin:@typescript-eslint/recommended'],
+      "rules": {
+        "@typescript-eslint/explicit-module-boundary-types": ["error"],
+        "@typescript-eslint/explicit-function-return-type": "off",
+      }
     }
   ],
   "rules": {
@@ -69,7 +86,30 @@ const frontend = {
     ],
     "import/no-webpack-loader-syntax": 0,
     "import/prefer-default-export": 0,
-
+    "import/extensions": [
+      2,
+      "ignorePackages",
+      {
+        "js": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "no-restricted-imports": [
+      2, {
+      "paths": [
+        {
+          "name": "react-router-dom",
+          "importNames": ["Link"],
+          "message": "Link is restricted. Please use LocalizedLink from views/i18n/LocalizedLink"
+        },
+        {
+          "name": "connected-react-router/immutable",
+          "importNames": ["push"],
+          "message": "push is restricted. Please use localizedPush from views/i18n/utils/localizedPush"
+        }
+      ]
+    }],
     "jsx-a11y/anchor-is-valid": 2,
     "jsx-a11y/aria-props": 2,
     "jsx-a11y/click-events-have-key-events": 0,
@@ -91,8 +131,9 @@ const frontend = {
 
     "react/button-has-type": [ 2, { "button": true, "submit": true, "reset": true } ],
     "react/default-props-match-prop-types": [ 2, { "allowRequiredDefaults": true } ],
-    "react/destructuring-assignment": [ 1, "always" ],
+    "react/destructuring-assignment": 0,
     "react/forbid-prop-types": 0,
+    "react/prop-types": 0,
     "react/require-default-props": 0,
     "react/require-extension": 0,
     "react/self-closing-comp": 0,

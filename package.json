@@ -1,6 +1,6 @@
 {
   "name": "@luckbox/eslint-rules",
-  "version": "2.1.0",
+  "version": "2.2.3",
   "description": "Unified eslint rules between projects",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/LuckboxGG/eslint-rules#readme",
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.14.0",
+    "eslint-config-airbnb": "^18.0.1",
     "eslint-plugin-node": "^11.0.0"
   }
 }
