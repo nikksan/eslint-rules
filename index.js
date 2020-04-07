@@ -13,20 +13,21 @@ const backend = {
     ...baseRules,
   	"node/exports-style": ["error", "module.exports"],
     "node/no-extraneous-import": "error",
-    "node/no-unpublished-require": 0,
-    "no-useless-catch": 0,
-    "require-atomic-updates": 0,
+    "node/no-unpublished-require": "off",
+    "no-useless-catch": "off",
+    "require-atomic-updates": "off",
   },
   "overrides": [
     {
       "files": ["*.ts"],
       "extends": ["plugin:@typescript-eslint/recommended"],
       "rules": {
-        "node/no-missing-import": 0,
-        "node/no-unsupported-features/es-syntax": 0,
-        "node/no-missing-require": 0,
-        "node/no-unpublished-import": 0,
-        "no-undef": 0,
+        "node/no-missing-import": "off",
+        "node/no-unsupported-features/es-syntax": "off",
+        "node/no-missing-require": "off",
+        "node/no-unpublished-import": "off",
+        "no-undef": "off",
+        "@typescript-eslint/explicit-function-return-type": "off",
       }
     }
   ],
