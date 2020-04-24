@@ -16,6 +16,7 @@ const backend = {
     "node/no-unpublished-require": "off",
     "no-useless-catch": "off",
     "require-atomic-updates": "off",
+    "no-duplicate-imports": "error",
   },
   "overrides": [
     {
@@ -28,6 +29,7 @@ const backend = {
         "node/no-unpublished-import": "off",
         "no-undef": "off",
         "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/no-unused-vars": "error",
       }
     }
   ],
