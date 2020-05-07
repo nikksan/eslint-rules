@@ -35,13 +35,13 @@ module.exports = {
     }
   ],
   "rules": {
-    "import/imports-first": 0,
-    "import/newline-after-import": 0,
-    "import/no-dynamic-require": 0,
-    "import/no-extraneous-dependencies": 0,
-    "import/no-named-as-default": 0,
+    "import/imports-first": "off",
+    "import/newline-after-import": "off",
+    "import/no-dynamic-require": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/no-named-as-default": "off",
     "import/no-unresolved": [
-      2,
+      "error",
       {
         "ignore": [
           "ROOT/config.json",
@@ -50,10 +50,10 @@ module.exports = {
         ]
       }
     ],
-    "import/no-webpack-loader-syntax": 0,
-    "import/prefer-default-export": 0,
+    "import/no-webpack-loader-syntax": "off",
+    "import/prefer-default-export": "off",
     "import/extensions": [
-      2,
+      "error",
       "ignorePackages",
       {
         "js": "never",
@@ -62,7 +62,7 @@ module.exports = {
       }
     ],
     "no-restricted-imports": [
-      2, {
+      "error", {
       "paths": [
         {
           "name": "react-router-dom",
@@ -76,44 +76,44 @@ module.exports = {
         }
       ]
     }],
-    "jsx-a11y/anchor-is-valid": 2,
-    "jsx-a11y/aria-props": 2,
-    "jsx-a11y/click-events-have-key-events": 0,
-    "jsx-a11y/control-has-associated-label": 0,
-    "jsx-a11y/heading-has-content": 0,
-    "jsx-a11y/label-has-associated-control": 2,
-    "jsx-a11y/mouse-events-have-key-events": 2,
-    "jsx-a11y/role-has-required-aria-props": 2,
-    "jsx-a11y/role-supports-aria-props": 2,
+    "jsx-a11y/anchor-is-valid": "error",
+    "jsx-a11y/aria-props": "error",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/control-has-associated-label": "off",
+    "jsx-a11y/heading-has-content": "off",
+    "jsx-a11y/label-has-associated-control": "error",
+    "jsx-a11y/mouse-events-have-key-events": "error",
+    "jsx-a11y/role-has-required-aria-props": "error",
+    "jsx-a11y/role-supports-aria-props": "error",
 
-    "jsx-quotes": [ 2, "prefer-double" ],
+    "jsx-quotes": [ "error", "prefer-double" ],
 
-    "class-methods-use-this": 0,
-    "max-len": 0,
-    "no-plusplus": 0,
-    "no-restricted-globals": [ 2, "event", "fdescribe" ],
-    "prefer-destructuring": 0,
-    "prefer-promise-reject-errors": 0,
+    "class-methods-use-this": "off",
+    "max-len": "off",
+    "no-plusplus": "off",
+    "no-restricted-globals": [ "error", "event", "fdescribe" ],
+    "prefer-destructuring": "off",
+    "prefer-promise-reject-errors": "off",
 
-    "react/button-has-type": [ 2, { "button": true, "submit": true, "reset": true } ],
-    "react/default-props-match-prop-types": [ 2, { "allowRequiredDefaults": true } ],
-    "react/destructuring-assignment": 0,
-    "react/forbid-prop-types": 0,
-    "react/prop-types": 0,
-    "react/require-default-props": 0,
-    "react/require-extension": 0,
-    "react/self-closing-comp": 0,
+    "react/button-has-type": [ "error", { "button": true, "submit": true, "reset": true } ],
+    "react/default-props-match-prop-types": [ "error", { "allowRequiredDefaults": true } ],
+    "react/destructuring-assignment": "off",
+    "react/forbid-prop-types": "off",
+    "react/prop-types": "off",
+    "react/require-default-props": "off",
+    "react/require-extension": "off",
+    "react/self-closing-comp": "off",
 
-    "react/jsx-closing-tag-location": 0,
-    "react/jsx-filename-extension": [ 0, { "ignore": [ "ui-kit" ] } ],
-    "react/jsx-first-prop-new-line": [ 2, "multiline" ],
-    "react/jsx-fragments": [ 2, "element" ],
-    "react/jsx-indent": 0,
-    "react/jsx-no-target-blank": 0,
-    "react/jsx-one-expression-per-line": 0,
-    "react/jsx-props-no-spreading": 0,
+    "react/jsx-closing-tag-location": "off",
+    "react/jsx-filename-extension": [ "off", { "ignore": [ "ui-kit" ] } ],
+    "react/jsx-first-prop-new-line": [ "error", "multiline" ],
+    "react/jsx-fragments": [ "error", "element" ],
+    "react/jsx-indent": "off",
+    "react/jsx-no-target-blank": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-props-no-spreading": "off",
     "react/jsx-tag-spacing": [
-      2,
+      "error",
       {
         "closingSlash": "never",
         "beforeSelfClosing": "always",
@@ -121,7 +121,7 @@ module.exports = {
         "beforeClosing": "never"
       }
     ],
-    "react/jsx-wrap-multilines": 0,
+    "react/jsx-wrap-multilines": "off",
   },
   "settings": {
     "import/resolver": {
