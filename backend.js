@@ -1,4 +1,3 @@
-const baseRules = require('./common');
 
 module.exports = {
   "env": {
@@ -7,10 +6,12 @@ module.exports = {
     "jest": true
   },
   "plugins": ["node"],
-  "extends": ["eslint:recommended", "plugin:node/recommended"],
+  "extends": [
+    __dirname + "/common.js",
+   "plugin:node/recommended"
+  ],
   "rules": {
-    ...baseRules,
-  	"node/exports-style": ["error", "module.exports"],
+    "node/exports-style": ["error", "module.exports"],
     "node/no-extraneous-import": "error",
     "node/no-unpublished-require": "off",
     "no-useless-catch": "off",
