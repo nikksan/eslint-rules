@@ -4,8 +4,8 @@ module.exports = {
     {
       "files": ["*.ts"],
       "extends": [
-        __dirname + "/common.js",
-        __dirname + "/backend.js",
+        __dirname + "/../common.js",
+        __dirname + "/../backend.js",
         "plugin:node/recommended"
       ],
       "rules": {
