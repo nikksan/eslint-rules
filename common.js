@@ -141,6 +141,6 @@ module.exports = {
     "vars-on-top": "off",
     "wrap-iife": "off",
     "yoda": "error",
-    "eslint lines-between-class-members": "error"
+    "lines-between-class-members": "error"
   },
 };
