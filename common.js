@@ -140,6 +140,7 @@ module.exports = {
     "valid-typeof": "error",
     "vars-on-top": "off",
     "wrap-iife": "off",
-    "yoda": "error"
+    "yoda": "error",
+    "eslint lines-between-class-members": "error"
   },
 };
