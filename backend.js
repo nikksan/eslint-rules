@@ -4,7 +4,10 @@ module.exports = {
     "es6": true,
     "jest": true
   },
-  "plugins": ["node"],
+  "plugins": [
+    "node",
+    "no-only-tests",
+  ],
   "extends": [
     __dirname + "/common.js",
    "plugin:node/recommended"
@@ -16,6 +19,7 @@ module.exports = {
     "no-useless-catch": "off",
     "require-atomic-updates": "off",
     "no-duplicate-imports": "error",
+    "no-only-tests/no-only-tests": "error",
   },
   "overrides": [
     {
