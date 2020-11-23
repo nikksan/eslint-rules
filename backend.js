@@ -30,6 +30,9 @@ module.exports = {
         "node/no-missing-require": "off",
         "node/no-unpublished-import": "off",
         "no-undef": "off",
+        "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
+        "brace-style": "error",
+        "no-continue": "off"
       }
     }
   ],
