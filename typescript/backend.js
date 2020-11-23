@@ -17,6 +17,7 @@ module.exports = {
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/no-unused-vars": "error",
         "@typescript-eslint/explicit-module-boundary-types": "error",
+        "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }]
       }
     }
   ],
