@@ -20,6 +20,9 @@ module.exports = {
     "require-atomic-updates": "off",
     "no-duplicate-imports": "error",
     "no-only-tests/no-only-tests": "error",
+    "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
+    "brace-style": "error",
+    "no-continue": "off"
   },
   "overrides": [
     {
@@ -29,10 +32,7 @@ module.exports = {
         "node/no-unsupported-features/es-syntax": "off",
         "node/no-missing-require": "off",
         "node/no-unpublished-import": "off",
-        "no-undef": "off",
-        "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
-        "brace-style": "error",
-        "no-continue": "off"
+        "no-undef": "off"
       }
     }
   ],
