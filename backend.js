@@ -21,7 +21,7 @@ module.exports = {
     "no-duplicate-imports": "error",
     "no-only-tests/no-only-tests": "error",
     "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
-    "brace-style": "error",
+    "brace-style": [ "error", "1tbs", { "allowSingleLine": false } ],
     "no-continue": "off"
   },
   "overrides": [
