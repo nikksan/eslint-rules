@@ -14,6 +14,8 @@ module.exports = {
         "node/no-missing-require": "off",
         "node/no-unpublished-import": "off",
         "no-undef": "off",
+        "no-shadow": "off",
+        "@typescript-eslint/no-shadow": "error",
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/no-unused-vars": "error",
         "@typescript-eslint/explicit-module-boundary-types": "error"
