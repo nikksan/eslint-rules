@@ -21,7 +21,8 @@
     "url": "https://github.com/LuckboxGG/eslint-rules/issues"
   },
   "homepage": "https://github.com/LuckboxGG/eslint-rules#readme",
-  "peerDependencies": {
+  "dependencies": {
+    "eslint": "^7.22.0",
     "@typescript-eslint/eslint-plugin": "^2.31.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-plugin-no-only-tests": "^2.4.0",
