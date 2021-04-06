@@ -23,9 +23,10 @@
   "homepage": "https://github.com/LuckboxGG/eslint-rules#readme",
   "dependencies": {
     "eslint": "^7.22.0",
-    "@typescript-eslint/eslint-plugin": "^2.31.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-plugin-no-only-tests": "^2.4.0",
-    "eslint-plugin-node": "^11.0.0"
+    "eslint-plugin-node": "^11.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.15.1",
+    "@typescript-eslint/parser": "^4.15.1"
   }
 }
